@@ -3,58 +3,61 @@
   Replace the sample content below, save, and refresh the page.
 */
 window.PORTFOLIO = {
-  name: "Your Name",
-  initials: "YN",
-  title: "Designer & Developer",
-  location: "Based in your city",
-  timezone: "Asia/Singapore",
-  availability: "Available for thoughtful collaborations",
-  email: "hello@example.com",
+  name: "Junda Long",
+  displayName: "Junda Long (龙俊达)",
+  initials: "JL",
+  title: "Mathematics · Arithmetic Geometry",
+  location: "Lausanne, Switzerland",
+  address: "Rue de Genève 76, 1004 Lausanne, Switzerland",
+  timezone: "Europe/Zurich",
+  availability: "Research in pure mathematics",
+  phone: "+41 78 351 78 68",
+  phoneHref: "+41783517868",
+  cv: "assets/Junda-Long-CV.pdf",
 
   intro:
-    "I’m Your Name, a designer and developer focused on clear ideas, useful products, and quietly memorable digital experiences.",
+    "I am Junda Long, working on p-adic integration on quotient stacks and its connections with Hitchin fibres, Springer theory, and the Langlands program.",
 
   about:
-    "I work across strategy, design, and technology to turn complicated questions into experiences people can understand and enjoy. I care about the full journey—from the first sketch to the final detail.",
+    "My current work concerns p-adic integration on quotient stacks and its connections with Hitchin fibres, Springer theory, and the Langlands program. More broadly, I am interested in the interaction between geometry, arithmetic, and representation theory.",
 
   now:
-    "New ways to make digital tools feel more human, understandable, and calm.",
+    "Quotient stacks and p-adic integration, with an emphasis on their relationship to Hitchin fibres, Springer theory, and Langlands-type questions.",
+
+  interests: [
+    "Algebraic geometry",
+    "Representation theory",
+    "Arithmetic geometry",
+    "p-adic methods"
+  ],
 
   projects: [
     {
       number: "01",
-      title: "Project One",
-      category: "Product design · 2026",
+      title: "The Weil Conjecture for Curves",
+      category: "Expository project · June 2026",
       description:
-        "A concise sentence explaining the problem, your contribution, and the result of the work.",
-      link: "#",
+        "A study of the Weil conjectures for smooth projective curves, the Hasse–Weil bound, Riemann–Hurwitz, maximal curves, and applications to explicit constructions.",
+      link: "assets/papers/weil-conjecture-project-source.zip",
+      linkLabel: "Download LaTeX source",
       color: "coral",
-      mark: "P1"
+      mark: "W"
     },
     {
       number: "02",
-      title: "Project Two",
-      category: "Creative development · 2025",
+      title: "Class Field Theory",
+      category: "Collaborative seminar notes · EPFL · 2025–26",
       description:
-        "Show what made this project interesting and why your approach mattered to the people using it.",
-      link: "#",
+        "Collaborative notes from the EPFL Student Seminar in Pure Mathematics, covering number fields, local fields, idèles, group cohomology, and the principal theorems of class field theory.",
+      link: "assets/papers/class-field-theory-source.zip",
+      linkLabel: "Download LaTeX source",
       color: "blue",
-      mark: "P2"
-    },
-    {
-      number: "03",
-      title: "Project Three",
-      category: "Strategy & identity · 2025",
-      description:
-        "Use this space for a strong third example—or remove the project if two tell your story better.",
-      link: "#",
-      color: "lime",
-      mark: "P3"
+      mark: "CFT"
     }
   ],
 
   socials: [
-    { label: "GitHub", url: "https://github.com/yourusername" },
-    { label: "LinkedIn", url: "https://www.linkedin.com/in/yourusername" }
+    { label: "GitHub", url: "https://github.com/JLewis-ai" },
+    { label: "CV", url: "assets/Junda-Long-CV.pdf" }
   ]
 };

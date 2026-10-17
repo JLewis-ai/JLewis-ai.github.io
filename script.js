@@ -8,20 +8,31 @@ const setText = (id, value) => {
 document.title = `${data.name} — ${data.title}`;
 setText("monogram", data.initials);
 setText("hero-initials", data.initials);
-setText("header-name", data.name);
+setText("header-name", data.displayName || data.name);
 setText("footer-name", data.name);
 setText("availability", data.availability);
 setText("intro", data.intro);
 setText("location", data.location);
 setText("about-copy", data.about);
 setText("now-copy", data.now);
+setText("contact-address", data.address);
 setText("year", new Date().getFullYear());
 
-for (const id of ["email-link-top", "email-link-bottom"]) {
+for (const id of ["cv-link-top", "cv-link-meta", "cv-link-bottom"]) {
   const link = document.getElementById(id);
-  link.href = `mailto:${data.email}`;
-  if (id === "email-link-bottom") link.firstChild.textContent = `${data.email} `;
+  if (link) link.href = data.cv;
 }
+
+const phoneLink = document.getElementById("phone-link");
+phoneLink.href = `tel:${data.phoneHref}`;
+phoneLink.firstChild.textContent = `${data.phone} `;
+
+const interestList = document.getElementById("interest-list");
+data.interests.forEach((interest) => {
+  const item = document.createElement("span");
+  item.textContent = interest;
+  interestList.appendChild(item);
+});
 
 const projectList = document.getElementById("project-list");
 data.projects.forEach((project) => {
@@ -38,6 +49,7 @@ data.projects.forEach((project) => {
       <h3>${project.title}</h3>
       <p class="project-category">${project.category}</p>
       <p class="project-description">${project.description}</p>
+      <span class="project-link-label">${project.linkLabel || "Open project"} ↗</span>
     </div>
     <div class="project-preview ${project.color}" aria-hidden="true">
       <span class="project-mark">${project.mark}</span>
