@@ -27,6 +27,14 @@ const phoneLink = document.getElementById("phone-link");
 phoneLink.href = `tel:${data.phoneHref}`;
 phoneLink.firstChild.textContent = `${data.phone} `;
 
+const contactEmails = document.getElementById("contact-emails");
+data.emails.forEach((email) => {
+  const link = document.createElement("a");
+  link.href = `mailto:${email}`;
+  link.textContent = email;
+  contactEmails.appendChild(link);
+});
+
 const interestList = document.getElementById("interest-list");
 data.interests.forEach((interest) => {
   const item = document.createElement("span");

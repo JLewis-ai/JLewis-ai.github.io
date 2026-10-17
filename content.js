@@ -13,6 +13,7 @@ window.PORTFOLIO = {
   availability: "Research in pure mathematics",
   phone: "+41 78 351 78 68",
   phoneHref: "+41783517868",
+  emails: ["lewlaflame@gmail.com", "junda.long@epfl.ch"],
   cv: "assets/Junda-Long-CV.pdf",
 
   intro:
@@ -27,6 +28,12 @@ window.PORTFOLIO = {
       period: "Current",
       role: "Graduate student",
       detail: "Thesis in the Arithmetic Geometry Group, supervised by Dimitri Wyss."
+    },
+    {
+      institution: "Harbin Institute of Technology, Shenzhen (HITSZ)",
+      period: "Undergraduate",
+      role: "Undergraduate degree",
+      detail: "Completed my undergraduate studies at HITSZ."
     },
     {
       institution: "University of Oxford",
@@ -85,6 +92,17 @@ window.PORTFOLIO = {
   projects: [
     {
       number: "01",
+      title: "Thesis draft — work in progress",
+      category: "EPFL Arithmetic Geometry Group · Live draft",
+      description:
+        "My thesis concerns p-adic integration on quotient stacks and is supervised by Dimitri Wyss. This link opens the current working draft on Overleaf.",
+      link: "https://www.overleaf.com/project/6ac4aabf8389108eef868ced/share#cb19f287f6897a4badc263c6edf6811359ad48b4a7f09ce3",
+      linkLabel: "View live draft",
+      color: "lime",
+      mark: "TH"
+    },
+    {
+      number: "02",
       title: "The Weil Conjecture for Curves",
       category: "Expository project · June 2026",
       description:
@@ -97,7 +115,7 @@ window.PORTFOLIO = {
       mark: "W"
     },
     {
-      number: "02",
+      number: "03",
       title: "Class Field Theory",
       category: "Collaborative seminar notes · EPFL · 2025–26",
       description:
