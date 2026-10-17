@@ -16,10 +16,10 @@ window.PORTFOLIO = {
   cv: "assets/Junda-Long-CV.pdf",
 
   intro:
-    "I am a graduate student at EPFL, working on p-adic integration on quotient stacks and its connections with Hitchin fibres, Springer theory, and the Langlands program.",
+    "I am a graduate student at EPFL. My thesis concerns p-adic integration on quotient stacks, and I am interested in Hitchin fibrations, Springer theory, and the Langlands program.",
 
   about:
-    "I am a graduate student at EPFL, where I am completing my thesis in the Arithmetic Geometry Group under the supervision of Dimitri Wyss. My current research concerns p-adic integration on quotient stacks and its connections with Hitchin fibres, Springer theory, and the Langlands program.",
+    "I am a graduate student at EPFL, where I am completing my thesis in the Arithmetic Geometry Group under the supervision of Dimitri Wyss. My thesis focuses on p-adic integration on quotient stacks. I am also interested in learning more about Hitchin fibrations, Springer theory, and the Langlands program.",
 
   academicPath: [
     {
@@ -37,14 +37,23 @@ window.PORTFOLIO = {
   ],
 
   now:
-    "Quotient stacks and p-adic integration, with an emphasis on their relationship to Hitchin fibres, Springer theory, and Langlands-type questions.",
+    "My thesis focuses on p-adic integration on quotient stacks. Alongside this work, I am interested in Hitchin fibrations, Springer theory, and the Langlands program.",
 
   interests: [
-    "Algebraic geometry",
-    "Representation theory",
-    "Arithmetic geometry",
+    "Hitchin fibrations",
+    "Springer theory",
+    "Langlands program",
     "p-adic methods"
   ],
+
+  seminar: {
+    kicker: "Currently participating",
+    title: "Perfectoid and prismatic methods",
+    description:
+      "A seminar on perfectoid rings and prisms, including tilting, almost purity, perfectoidization, and prismatic cohomology.",
+    time: "Mondays · 10:15–12:00 · EPFL MA-B1-524",
+    url: "https://leo-nc.info/perfectoid_seminar/"
+  },
 
   projects: [
     {
@@ -66,7 +75,7 @@ window.PORTFOLIO = {
       category: "Collaborative seminar notes · EPFL · 2025–26",
       description:
         "Collaborative notes from the EPFL Student Seminar in Pure Mathematics, covering number fields, local fields, idèles, group cohomology, and the principal theorems of class field theory.",
-      link: "assets/papers/class-field-theory.pdf",
+      link: "assets/papers/Class_field_theory.pdf",
       linkLabel: "Read PDF · 139 pages",
       sourceLink: "assets/papers/class-field-theory-source.zip",
       sourceLabel: "LaTeX source",

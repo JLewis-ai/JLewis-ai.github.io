@@ -50,6 +50,12 @@ data.academicPath.forEach((item) => {
   academicPath.appendChild(entry);
 });
 
+setText("seminar-kicker", data.seminar.kicker);
+setText("seminar-title", data.seminar.title);
+setText("seminar-copy", data.seminar.description);
+setText("seminar-time", data.seminar.time);
+document.getElementById("seminar-link").href = data.seminar.url;
+
 const projectList = document.getElementById("project-list");
 data.projects.forEach((project) => {
   const article = document.createElement("article");
