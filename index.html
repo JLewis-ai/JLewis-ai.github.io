@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Personal portfolio — selected work, background, and ways to get in touch."
+    />
+    <meta name="theme-color" content="#f1efe8" />
+    <title>Portfolio</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="Home">
+        <span class="wordmark-mark" id="monogram">YN</span>
+        <span id="header-name">Your Name</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch color theme">
+        <span aria-hidden="true">◐</span>
+      </button>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="hero-copy reveal">
+          <p class="eyebrow" id="availability">Available for thoughtful collaborations</p>
+          <h1>
+            I make useful things<br />
+            <span class="accent">feel inevitable.</span>
+          </h1>
+          <p class="hero-intro" id="intro">
+            I’m Your Name, a designer and developer focused on clear ideas, useful products,
+            and quietly memorable digital experiences.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#work">See selected work <span>↘</span></a>
+            <a class="text-link" id="email-link-top" href="mailto:hello@example.com">Say hello ↗</a>
+          </div>
+        </div>
+
+        <div class="hero-object reveal" aria-hidden="true">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="hero-disc">
+            <span id="hero-initials">YN</span>
+          </div>
+          <span class="object-label label-one">Ideas → systems</span>
+          <span class="object-label label-two">Made with intent</span>
+        </div>
+
+        <div class="hero-meta reveal">
+          <span id="location">Based in your city</span>
+          <span id="local-time">Local time · --:--</span>
+          <span>Scroll to explore ↓</span>
+        </div>
+      </section>
+
+      <section class="section work" id="work">
+        <div class="section-heading reveal">
+          <p class="section-number">01 / Selected work</p>
+          <h2>A few things I’ve<br />helped bring to life.</h2>
+        </div>
+        <div class="project-list" id="project-list"></div>
+      </section>
+
+      <section class="section about" id="about">
+        <div class="section-heading reveal">
+          <p class="section-number">02 / About</p>
+          <h2>Curious by default.<br />Precise by practice.</h2>
+        </div>
+
+        <div class="about-grid">
+          <p class="about-lead reveal" id="about-copy">
+            I work across strategy, design, and technology to turn complicated questions into
+            experiences people can understand and enjoy.
+          </p>
+          <div class="principles reveal">
+            <article>
+              <span>01</span>
+              <h3>Start with the real problem</h3>
+              <p>Good work begins with listening closely and asking sharper questions.</p>
+            </article>
+            <article>
+              <span>02</span>
+              <h3>Make clarity the aesthetic</h3>
+              <p>Every choice should help people understand, navigate, or feel something.</p>
+            </article>
+            <article>
+              <span>03</span>
+              <h3>Sweat the useful details</h3>
+              <p>Small interactions, thoughtful words, and resilient systems make work last.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section now" aria-labelledby="now-title">
+        <p class="section-number reveal">03 / Right now</p>
+        <div class="now-card reveal">
+          <h2 id="now-title">Currently exploring</h2>
+          <p id="now-copy">
+            New ways to make digital tools feel more human, understandable, and calm.
+          </p>
+          <span class="pulse"><i></i> Updated recently</span>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="contact-inner reveal">
+          <p class="section-number">04 / Contact</p>
+          <h2>Have a good problem<br />worth solving?</h2>
+          <a class="contact-email" id="email-link-bottom" href="mailto:hello@example.com">
+            hello@example.com <span>↗</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> <span id="footer-name">Your Name</span></p>
+      <div id="social-links"></div>
+      <a href="#top">Back to top ↑</a>
+    </footer>
+
+    <script src="content.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
