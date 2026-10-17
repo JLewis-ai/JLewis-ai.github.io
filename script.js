@@ -56,6 +56,19 @@ setText("seminar-copy", data.seminar.description);
 setText("seminar-time", data.seminar.time);
 document.getElementById("seminar-link").href = data.seminar.url;
 
+setText("beyond-intro", data.beyond.intro);
+const beyondGrid = document.getElementById("beyond-grid");
+data.beyond.groups.forEach((group) => {
+  const card = document.createElement("article");
+  card.className = "beyond-card reveal";
+  card.innerHTML = `
+    <span>${group.number}</span>
+    <h3>${group.title}</h3>
+    <ul>${group.items.map((item) => `<li>${item}</li>`).join("")}</ul>
+  `;
+  beyondGrid.appendChild(card);
+});
+
 const projectList = document.getElementById("project-list");
 data.projects.forEach((project) => {
   const article = document.createElement("article");

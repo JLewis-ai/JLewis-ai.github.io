@@ -385,6 +385,45 @@ h1 {
   letter-spacing: .08em;
 }
 
+.beyond { border-top: 1px solid var(--line); }
+.beyond-intro {
+  max-width: 52rem;
+  margin: -1.5rem 0 4rem 35%;
+  color: var(--muted);
+  font-size: clamp(1.1rem, 2vw, 1.6rem);
+  line-height: 1.55;
+  letter-spacing: -.02em;
+}
+.beyond-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: var(--line);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.beyond-card {
+  min-height: 20rem;
+  padding: 1.8rem;
+  background: var(--bg);
+}
+.beyond-card > span {
+  color: var(--accent);
+  font: 400 .65rem "DM Mono", monospace;
+}
+.beyond-card h3 {
+  margin: 3rem 0 2rem;
+  font-size: 1.2rem;
+  letter-spacing: -.03em;
+}
+.beyond-card ul { margin: 0; padding: 0; list-style: none; }
+.beyond-card li {
+  padding: .65rem 0;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: .82rem;
+}
+
 .contact { padding: 9rem 0; background: var(--accent); color: var(--accent-ink); }
 .contact-inner { width: var(--page); margin: auto; }
 .contact .section-number { color: inherit; opacity: .7; }
@@ -458,6 +497,8 @@ footer > a { justify-self: end; }
   .now { gap: 2rem; }
   .seminar-card { grid-template-columns: 1fr; padding: 2rem; }
   .seminar-meta { align-items: flex-start; gap: 2rem; text-align: left; }
+  .beyond-intro { margin-left: 0; }
+  .beyond-grid { grid-template-columns: repeat(2, 1fr); }
   footer { grid-template-columns: 1fr 1fr; gap: 1.4rem; padding: 2rem 0; }
   #social-links { grid-row: 2; }
   footer > a { grid-column: 2; grid-row: 2; }
@@ -475,6 +516,8 @@ footer > a { justify-self: end; }
   .now-card { padding: 2rem; }
   .contact-details { grid-template-columns: 1fr; align-items: start; }
   .contact-details > a { width: fit-content; }
+  .beyond-grid { grid-template-columns: 1fr; }
+  .beyond-card { min-height: auto; }
 }
 
 @media (prefers-reduced-motion: reduce) {

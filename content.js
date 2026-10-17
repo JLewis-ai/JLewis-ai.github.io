@@ -55,6 +55,33 @@ window.PORTFOLIO = {
     url: "https://leo-nc.info/perfectoid_seminar/"
   },
 
+  beyond: {
+    intro:
+      "Away from mathematics, I enjoy sport, travel, games, languages, and learning how markets behave.",
+    groups: [
+      {
+        number: "01",
+        title: "Sport",
+        items: ["Badminton", "Skiing", "Tennis", "Football", "Snooker"]
+      },
+      {
+        number: "02",
+        title: "Travel & games",
+        items: ["Travel", "MOBA games", "FPS games on PC"]
+      },
+      {
+        number: "03",
+        title: "Languages",
+        items: ["Cantonese", "Mandarin", "English", "Beginner French"]
+      },
+      {
+        number: "04",
+        title: "Side interests",
+        items: ["Personal investing", "Small-scale quantitative strategy research"]
+      }
+    ]
+  },
+
   projects: [
     {
       number: "01",
