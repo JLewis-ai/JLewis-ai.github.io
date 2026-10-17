@@ -36,26 +36,24 @@ data.interests.forEach((interest) => {
 
 const projectList = document.getElementById("project-list");
 data.projects.forEach((project) => {
-  const link = document.createElement("a");
-  link.className = "project reveal";
-  link.href = project.link;
-  if (project.link.startsWith("http")) {
-    link.target = "_blank";
-    link.rel = "noreferrer";
-  }
-  link.innerHTML = `
+  const article = document.createElement("article");
+  article.className = "project reveal";
+  article.innerHTML = `
     <span class="project-number">${project.number}</span>
     <div>
       <h3>${project.title}</h3>
       <p class="project-category">${project.category}</p>
       <p class="project-description">${project.description}</p>
-      <span class="project-link-label">${project.linkLabel || "Open project"} ↗</span>
+      <div class="project-actions">
+        <a href="${project.link}" target="_blank" rel="noreferrer">${project.linkLabel || "Open project"} ↗</a>
+        ${project.sourceLink ? `<a href="${project.sourceLink}" download>${project.sourceLabel || "Source files"} ↓</a>` : ""}
+      </div>
     </div>
-    <div class="project-preview ${project.color}" aria-hidden="true">
+    <a class="project-preview ${project.color}" href="${project.link}" target="_blank" rel="noreferrer" aria-label="Open ${project.title} PDF">
       <span class="project-mark">${project.mark}</span>
-    </div>
+    </a>
   `;
-  projectList.appendChild(link);
+  projectList.appendChild(article);
 });
 
 const socials = document.getElementById("social-links");

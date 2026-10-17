@@ -267,12 +267,18 @@ h1 {
 .project-preview::before { width: 14rem; aspect-ratio: 1; }
 .project-preview::after { width: 21rem; aspect-ratio: 1; }
 .project-description { align-self: end; max-width: 34rem; margin: 1.2rem 0 0; color: var(--muted); line-height: 1.65; font-size: .9rem; }
-.project-link-label {
-  display: inline-block;
+.project-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
   margin-top: 1.2rem;
+}
+.project-actions a {
+  color: inherit;
   font: 500 .66rem "DM Mono", monospace;
   text-transform: uppercase;
   letter-spacing: .08em;
+  text-underline-offset: .25rem;
 }
 
 .about { border-top: 1px solid var(--line); }

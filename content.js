@@ -38,8 +38,10 @@ window.PORTFOLIO = {
       category: "Expository project · June 2026",
       description:
         "A study of the Weil conjectures for smooth projective curves, the Hasse–Weil bound, Riemann–Hurwitz, maximal curves, and applications to explicit constructions.",
-      link: "assets/papers/weil-conjecture-project-source.zip",
-      linkLabel: "Download LaTeX source",
+      link: "assets/papers/weil-conjecture-for-curves.pdf",
+      linkLabel: "Read PDF · 32 pages",
+      sourceLink: "assets/papers/weil-conjecture-project-source.zip",
+      sourceLabel: "LaTeX source",
       color: "coral",
       mark: "W"
     },
@@ -49,8 +51,10 @@ window.PORTFOLIO = {
       category: "Collaborative seminar notes · EPFL · 2025–26",
       description:
         "Collaborative notes from the EPFL Student Seminar in Pure Mathematics, covering number fields, local fields, idèles, group cohomology, and the principal theorems of class field theory.",
-      link: "assets/papers/class-field-theory-source.zip",
-      linkLabel: "Download LaTeX source",
+      link: "assets/papers/class-field-theory.pdf",
+      linkLabel: "Read PDF · 139 pages",
+      sourceLink: "assets/papers/class-field-theory-source.zip",
+      sourceLabel: "LaTeX source",
       color: "blue",
       mark: "CFT"
     }
