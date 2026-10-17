@@ -34,6 +34,22 @@ data.interests.forEach((interest) => {
   interestList.appendChild(item);
 });
 
+const academicPath = document.getElementById("academic-path");
+data.academicPath.forEach((item) => {
+  const entry = document.createElement("article");
+  entry.innerHTML = `
+    <div>
+      <span>${item.period}</span>
+      <h3>${item.institution}</h3>
+    </div>
+    <div>
+      <strong>${item.role}</strong>
+      <p>${item.detail}</p>
+    </div>
+  `;
+  academicPath.appendChild(entry);
+});
+
 const projectList = document.getElementById("project-list");
 data.projects.forEach((project) => {
   const article = document.createElement("article");

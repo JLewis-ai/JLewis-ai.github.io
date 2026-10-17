@@ -16,10 +16,25 @@ window.PORTFOLIO = {
   cv: "assets/Junda-Long-CV.pdf",
 
   intro:
-    "I am Junda Long, working on p-adic integration on quotient stacks and its connections with Hitchin fibres, Springer theory, and the Langlands program.",
+    "I am a graduate student at EPFL, working on p-adic integration on quotient stacks and its connections with Hitchin fibres, Springer theory, and the Langlands program.",
 
   about:
-    "My current work concerns p-adic integration on quotient stacks and its connections with Hitchin fibres, Springer theory, and the Langlands program. More broadly, I am interested in the interaction between geometry, arithmetic, and representation theory.",
+    "I am a graduate student at EPFL, where I am completing my thesis in the Arithmetic Geometry Group under the supervision of Dimitri Wyss. My current research concerns p-adic integration on quotient stacks and its connections with Hitchin fibres, Springer theory, and the Langlands program.",
+
+  academicPath: [
+    {
+      institution: "EPFL",
+      period: "Current",
+      role: "Graduate student",
+      detail: "Thesis in the Arithmetic Geometry Group, supervised by Dimitri Wyss."
+    },
+    {
+      institution: "University of Oxford",
+      period: "Undergraduate exchange",
+      role: "St Peter’s College",
+      detail: "Exchange studies undertaken during my undergraduate degree."
+    }
+  ],
 
   now:
     "Quotient stacks and p-adic integration, with an emphasis on their relationship to Hitchin fibres, Springer theory, and Langlands-type questions.",
