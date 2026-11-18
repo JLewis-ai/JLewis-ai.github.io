@@ -126,6 +126,17 @@ window.PORTFOLIO = {
       sourceLabel: "LaTeX source",
       color: "blue",
       mark: "CFT"
+    },
+    {
+      number: "04",
+      title: "Springer Theory Notes",
+      category: "Personal notes · Work in progress · 2026",
+      description:
+        "Developing notes on Springer geometry, Weyl group actions, perverse sheaves, and related aspects of the Springer correspondence. The source is synchronized from my Overleaf project and remains a work in progress.",
+      link: "assets/papers/springer-theory-notes-source.zip",
+      linkLabel: "Download LaTeX notes",
+      color: "lime",
+      mark: "SP"
     }
   ],
 
