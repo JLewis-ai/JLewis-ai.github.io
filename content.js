@@ -17,10 +17,10 @@ window.PORTFOLIO = {
   cv: "assets/Junda-Long-CV.pdf",
 
   intro:
-    "I am a graduate student at EPFL. My thesis concerns p-adic integration on quotient stacks, and I am interested in Hitchin fibrations, Springer theory, and the Langlands program.",
+    "I am a graduate student at EPFL. My thesis concerns p-adic integration on quotient stacks, and my broader interests include algebraic geometry, representation theory, and number theory.",
 
   about:
-    "I am a graduate student at EPFL, where I am completing my thesis in the Arithmetic Geometry Group under the supervision of Dimitri Wyss. My thesis focuses on p-adic integration on quotient stacks. I am also interested in learning more about Hitchin fibrations, Springer theory, and the Langlands program.",
+    "I am a graduate student at EPFL, where I am completing my thesis in the Arithmetic Geometry Group under the supervision of Dimitri Wyss. My thesis focuses on p-adic integration on quotient stacks. More broadly, I am interested in algebraic geometry, representation theory, and number theory.",
 
   academicPath: [
     {
@@ -44,13 +44,12 @@ window.PORTFOLIO = {
   ],
 
   now:
-    "My thesis focuses on p-adic integration on quotient stacks. Alongside this work, I am interested in Hitchin fibrations, Springer theory, and the Langlands program.",
+    "My thesis focuses on p-adic integration on quotient stacks. Alongside this work, I am interested in algebraic geometry, representation theory, and number theory.",
 
   interests: [
-    "Hitchin fibrations",
-    "Springer theory",
-    "Langlands program",
-    "p-adic methods"
+    "Algebraic geometry",
+    "Representation theory",
+    "Number theory"
   ],
 
   seminar: {
